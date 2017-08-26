@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <title>我的第一个页面</title>
-
-   这是内容,这下你相信了吧
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="https://typo.sofi.sh/typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<div id="content">
+  </div>
+  # 我的第一篇博客
   
+  
+  <script>
+    var content=document.getElementById('content')
+    var markdown=content.innerHTML
+    var html=marked(markdown)
+    content.innnerHTML=html
+  </script>
+</body>
 </html>
